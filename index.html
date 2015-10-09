@@ -8,18 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
-    <!--style> 
-	    
-	   
-		#login-nav input { margin-bottom: 15px; }
-	    
-    </style-->
-    
+        
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"-->
 
-    <title>myHeart</title>
+    <title>my Heart</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +39,6 @@
 	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
 
 <script>
-
 //dropdown navigation bar login
 $(document).ready(function(){
 //Handles menu drop down
@@ -54,18 +46,6 @@ $('.dropdown-menu').find('form').click(function (e) {
 e.stopPropagation();
 });
 });
-
-
-//sign up box layover
-$('#sign-up').click(function(){
-	var target = $(this).attr('href');
-    $(target).fadeToggle('fast');
-});
-
-$('#sign-up-popup').click(function(){
-	$(this).fadeOut('fast');
-});
-
 </script>
 
 
@@ -126,13 +106,13 @@ $('#sign-up-popup').click(function(){
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="http://www.jquery2dotnet.com">myHeart</a>
+               <a class="navbar-brand" href="#">myHeart</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
-                  <li class="active"><a href="http://www.jquery2dotnet.com">Home</a></li>
-                  <li><a href="http://www.jquery2dotnet.com">About Us</a></li>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
                   <!--li class="dropdown">
                      <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
                      <ul class="dropdown-menu">
@@ -155,7 +135,7 @@ $('#sign-up-popup').click(function(){
                <ul class="nav navbar-nav navbar-right">
                   <li><a id="sign-up" class="sign-up" href="#sign-up-popup">Sign Up</a></li>
                   <li class="dropdown">
-                     <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
                      <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
                         <li>
                            <div class="row">
@@ -196,15 +176,8 @@ $('#sign-up-popup').click(function(){
    </div>
 </div>
     	
-    	
+    <!-- END NEW NAV -->
     
-	<!-- END NEW NAV -->
-    
-    
-    
-    
-    
-
     <!-- Header -->
     <header>
         <div class="container">
@@ -222,86 +195,63 @@ $('#sign-up-popup').click(function(){
 
                     <!--script for heart main-->
 
-								<script>
-								var lastTapSeconds = 0;
-								var bpm = 0;
-								
-								//extra variabelen voor functionaliteit uitbreiding.
-								var beats = [];
-								var average = 0;
-								var count = 0;
-								
-								var tapDiv = document.getElementById("tapDiv");
-								
-								$(tapDiv).on('click', function() {
-								var tapSeconds = new Date().getTime();
-								
-								bpm = ((1 / ((tapSeconds - lastTapSeconds) / 1000)) * 60);
-								lastTapSeconds = tapSeconds;
-								tapDiv.innerHTML = '<h1 style="display:inline;">' + Math.floor(bpm) + '</h1><img style="height:256px;width:256px;" src="img/heart.png"/>';
+						<script>
+						var lastTapSeconds = 0;
+						var bpm = 0;
+						
+						//extra variabelen voor functionaliteit uitbreiding.
+						var beats = [];
+						var average = 0;
+						var count = 0;
+						
+						var tapDiv = document.getElementById("tapDiv");
+						
+						$(tapDiv).on('click', function() {
+						var tapSeconds = new Date().getTime();
+						
+						bpm = ((1 / ((tapSeconds - lastTapSeconds) / 1000)) * 60);
+						lastTapSeconds = tapSeconds;
+						tapDiv.innerHTML = '<h1 style="display:inline;">' + Math.floor(bpm) + '</h1><img style="height:256px;width:256px;" src="img/heart.png"/>';
 
-								//extra functionaliteit
-								beats.push(Math.floor(bpm));
-								average *= count;  //average = average * count
-								average += Math.floor(bpm);  //average = average + count
-								count++;
-								average /= count;  //average = average / counterIncrement
-								
-								//callBack Method();
-								//function callBack(strave){
-									
-								//this.strave = strave;
-								//return ((12 * Math.cos) / 0.124);				
-								//}
-								
-								//als array entries 10 heeft bereikt geef prompt met gemiddelde bpm.
-								if(beats.length >= 10) {
-								//alert("Your Average Beats Per Minute: " + average);
+						//extra functionaliteit
+						beats.push(Math.floor(bpm));
+						average *= count;  //average = average * count
+						average += Math.floor(bpm);  //average = average + count
+						count++;
+						average /= count;  //average = average / counterIncrement
+						
+						//callBack Method();
+						//function callBack(strave){
 							
-									if ( average > 60 && average < 100 )
-								    alert( "You have a normal resting heart rate. Good Job!" );
-									else if ( average < 60 )
-								    alert( "You have an efficient heart function and better cardiovascular fitness. Keep it up!" );
-									else if ( average > 100 )
-								    alert( "Your resting heart has an high average, indicating an unefficient and most likely unhealthy heart." );
-									else
-								    alert( "Please measure again, your measurements seem unregular..." );
-								    
-								    if(beats.length >=10){
-									  
-									   beats.length = 0;
-									   bpm = 0;	
-								   }						
-								  }
-								});
-								</script>
-								
-								<!--div> 
-								
-										switch() {
-										
-										case (average>60 && avarage<100):
-											alert("From the measurements, we conclude that you have a normal resting heart rate.");
-											break;
-								
-								
-										case (average<59):
-											alert("From the measurements, we conclude that you have an efficient heart function and better cardiovascular fitness.");
-											break;
-								
-										case (average>100):
-											alert("From the measurements, we conclude that your resting heart has an high average, we might be stated as unefficient and not fit.");
-											break;
-										
-											default:
-											alert("Please measure again, your measurements seem unregular.");
-											break;
-								</div-->
+						//this.strave = strave;
+						//return ((12 * Math.cos) / 0.124);				
+						//}
+						
+						//als array entries 10 heeft bereikt geef prompt met gemiddelde bpm.
+						if(beats.length >= 10) {
+						//alert("Your Average Beats Per Minute: " + average);
+					
+							if ( average > 60 && average < 100 )
+						    alert( "You have a normal resting heart rate. Good Job!" );
+							else if ( average < 60 )
+						    alert( "You have an efficient heart function and better cardiovascular fitness. Keep it up!" );
+							else if ( average > 100 )
+						    alert( "Your resting heart has an high average, indicating an unefficient and most likely unhealthy heart." );
+							else
+						    alert( "Please measure again, your measurements seem unregular..." );
+						    
+						    if(beats.length >=10){
+							  
+							   beats.length = 0;
+							   bpm = 0;	
+						   }						
+						  }
+						});
+						</script>
                     </div>
                  </h4>
                 </div>
-               </div>  
-						
+               </div>  	
 					<!-- End Patient Profile in Tab1 -->
                     
                     <!-- script for heart main -->
@@ -320,31 +270,10 @@ $('#sign-up-popup').click(function(){
 <!-- POP UP SIGN UP -->
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<a id="sign-up" class="sign-up" href="#sign-up-popup">Sign Up (Click me for popup!)</a>
-
-<div id="sign-up-popup" class="popup-overlay">
-    <div class="sign-up-form-container">
-    <form>
-        <h1>Sign Up</h1>
-        <hr/>
-        <br/>
-        <input type="text" />
-        <br/>
-        <input type="text" />
-        <br/>
-        <input type="button" value="Sign Up" />
-    </form>
-    
-</div>
-</div>
-
 
 <!-- END POP UP SIGN UP -->
 
-
-
-    <!-- Portfolio Grid Section -->
+<!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -565,7 +494,7 @@ $('#sign-up-popup').click(function(){
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>my Heart</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>

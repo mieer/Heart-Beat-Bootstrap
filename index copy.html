@@ -8,18 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
-    <!--style> 
-	    
-	   
-		#login-nav input { margin-bottom: 15px; }
-	    
-    </style-->
-    
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <title>myHeart</title>
+    <title>Freelancer - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,265 +28,57 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-    <!-- jquery for the webapp -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
-
-<script>
-
-//dropdown navigation bar login
-$(document).ready(function(){
-//Handles menu drop down
-$('.dropdown-menu').find('form').click(function (e) {
-e.stopPropagation();
-});
-});
-
-</script>
-
 
 </head>
 
 <body id="page-top" class="index">
 
-   
-    <!-- Navigation >
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <!--div class="navbar-header page-scroll">
+            <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">my Heart</a>
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">About Heart Beat</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">A Look into the Future</a>
+                        <a href="#about">About</a>
                     </li>
-                    
                     <li class="page-scroll">
-                        <a href="#account">Account</a>
+                        <a href="#contact">Contact</a>
                     </li>
-
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        <!--/div>
+        </div>
         <!-- /.container-fluid -->
-    <!--/nav-->
-
-    <!-- NEW NAV BAR-->
-    
-    	<div class="container">
-   <div class="row">
-      <div class="col-md-12">
-         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="http://www.jquery2dotnet.com">myHeart</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav">
-                  <li class="active"><a href="http://www.jquery2dotnet.com">Home</a></li>
-                  <li><a href="http://www.jquery2dotnet.com">About Us</a></li>
-                  <!--li class="dropdown">
-                     <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="http://www.jquery2dotnet.com">Action</a></li>
-                        <li><a href="http://www.jquery2dotnet.com">Another action</a></li>
-                        <li><a href="http://www.jquery2dotnet.com">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="http://www.jquery2dotnet.com">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="http://www.jquery2dotnet.com">One more separated link</a></li>
-                     </ul>
-                  </li-->
-               </ul>
-               <!--form class="navbar-form navbar-left" role="search">
-                  <div class="form-group">
-                     <input type="text" class="form-control" placeholder="Search">
-                  </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
-               </form-->
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="http://www.jquery2dotnet.com">Sign Up</a></li>
-                  <li class="dropdown">
-                     <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
-                     <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
-                        <li>
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                    <div class="form-group">
-                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                    </div>
-                                    <div class="form-group">
-                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                    </div>
-                                    <div class="checkbox">
-                                       <label>
-                                       <input type="checkbox"> Remember me
-                                       </label>
-                                    </div>
-                                    <div class="form-group">
-                                       <button type="submit" class="btn btn-success btn-block">Sign in</button>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                           <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
-                           <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-         </nav>
-      </div>
-   </div>
-</div>
-    	
-    	
-    
-	<!-- END NEW NAV -->
-    
-    
-    
-    
-    
+    </nav>
 
     <!-- Header -->
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!img class="img-responsive" src="img/heart.png" alt=""-->
-                    
-                    <!--main-->
-                    
-                    <div id="tapDiv"><input type="submit"  id="search" src="img/heart.png" value=""><div>
-                    
-                    <!--div id="tapDiv" style="height:256px;width:256px;background-color:#EBE0FF;color:#FBF9FF;padding: 40px 0px 0px 7px;"><h4 style="color: #97B4EF;"></div-->	
-
-                    <!--main-->
-
-                    <!--script for heart main-->
-
-								<script>
-								var lastTapSeconds = 0;
-								var bpm = 0;
-								
-								//extra variabelen voor functionaliteit uitbreiding.
-								var beats = [];
-								var average = 0;
-								var count = 0;
-								
-								var tapDiv = document.getElementById("tapDiv");
-								
-								$(tapDiv).on('click', function() {
-								var tapSeconds = new Date().getTime();
-								
-								bpm = ((1 / ((tapSeconds - lastTapSeconds) / 1000)) * 60);
-								lastTapSeconds = tapSeconds;
-								tapDiv.innerHTML = '<h1 style="display:inline;">' + Math.floor(bpm) + '</h1><img style="height:256px;width:256px;" src="img/heart.png"/>';
-
-								//extra functionaliteit
-								beats.push(Math.floor(bpm));
-								average *= count;  //average = average * count
-								average += Math.floor(bpm);  //average = average + count
-								count++;
-								average /= count;  //average = average / counterIncrement
-								
-								//callBack Method();
-								//function callBack(strave){
-									
-								//this.strave = strave;
-								//return ((12 * Math.cos) / 0.124);				
-								//}
-								
-								//als array entries 10 heeft bereikt geef prompt met gemiddelde bpm.
-								if(beats.length >= 10) {
-								//alert("Your Average Beats Per Minute: " + average);
-							
-									if ( average > 60 && average < 100 )
-								    alert( "You have a normal resting heart rate. Good Job!" );
-									else if ( average < 60 )
-								    alert( "You have an efficient heart function and better cardiovascular fitness. Keep it up!" );
-									else if ( average > 100 )
-								    alert( "Your resting heart has an high average, indicating an unefficient and most likely unhealthy heart." );
-									else
-								    alert( "Please measure again, your measurements seem unregular..." );
-								    
-								    if(beats.length >=10){
-									  
-									   beats.length = 0;
-									   bpm = 0;	
-								   }						
-								  }
-								});
-								</script>
-								
-								<!--div> 
-								
-										switch() {
-										
-										case (average>60 && avarage<100):
-											alert("From the measurements, we conclude that you have a normal resting heart rate.");
-											break;
-								
-								
-										case (average<59):
-											alert("From the measurements, we conclude that you have an efficient heart function and better cardiovascular fitness.");
-											break;
-								
-										case (average>100):
-											alert("From the measurements, we conclude that your resting heart has an high average, we might be stated as unefficient and not fit.");
-											break;
-										
-											default:
-											alert("Please measure again, your measurements seem unregular.");
-											break;
-
-								</div-->
-                    </div>
-                 </h4>
-                </div>
-               </div>  
-						
-					<!-- End Patient Profile in Tab1 -->
-                    
-                    <!-- script for heart main -->
-
+                    <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Start Measuring your heart beat!</span>
+                        <span class="name">Start Bootstrap</span>
                         <hr class="star-light">
-                        <span class="skills">[1] Hold your pulse - [2] Each time you feel a pulse, click - [3] After 10 clicks, you are done!</span>
+                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
                     </div>
                 </div>
             </div>
@@ -308,12 +90,12 @@ e.stopPropagation();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About Heart Beat</h2>
+                    <h2>Portfolio</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-             <!--   <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -372,9 +154,7 @@ e.stopPropagation();
                         </div>
                         <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
                     </a>
-                </div>  FOLDER-->
-             
-             <p>The foundation of this idea is enough to build greats things upon. The next amazing functionality you can expect is saving your heart beat stats and generate a graph out of them. Subsequently you can email it to youself!</p>
+                </div>
             </div>
         </div>
     </section>
@@ -384,19 +164,21 @@ e.stopPropagation();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>A look into the future</h2>
+                    <h2>About</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Save or share your heart rate data easily and effectively!</p>
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>From anywhere in the world you can apply this simple webapp and determine your health.</p>
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                   
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>
                 </div>
             </div>
         </div>
@@ -463,11 +245,11 @@ e.stopPropagation();
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>CONTACT</h3>
-                        <p>Almere,<br>Flevoland, The Netherlands</p>
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Your Heart Rate</h3>
+                        <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
@@ -487,8 +269,8 @@ e.stopPropagation();
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3><a href="#">DONATE NOW</a></h3>
-                        <p>Your Heart Rate is a freshly baked idea made to calm your concerns, in order us to keep running, we need to actually pay for our server subscriptions! Any amount is helpful, we thank you!</p>
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
@@ -497,7 +279,7 @@ e.stopPropagation();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; 2015 Mieer Darwesh
+                        Copyright &copy; Your Website 2014
                     </div>
                 </div>
             </div>
@@ -736,33 +518,22 @@ e.stopPropagation();
     </div>
 
     <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="js/classie.js"></script>
-    <script type="text/javascript" src="js/cbpAnimatedHeader.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script type="text/javascript" src="js/freelancer.js"></script>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/scripts.js"></script>
-	
-	
-	<!-- for nav bar login dropdown -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-
+    <script src="js/freelancer.js"></script>
 
 </body>
 

@@ -26,6 +26,11 @@ $(function() {
     });
 });
 
+//sign up overlay
+$('#openBtn').click(function(){
+	$('#myModal').modal({show:true})
+});
+
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
@@ -36,7 +41,3 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-//sign up overlay
-$('#openBtn').click(function(){
-	$('#myModal').modal({show:true})
-});
